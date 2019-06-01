@@ -1,0 +1,35 @@
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ 
+.products ul.apparel{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 340px; /* width of each table */
+    margin-right: 20px; /* spacing between tables */
+    margin-bottom: 1em;
+    border: 1px solid gray;
+}
+ 
+@media only screen and (max-width: 600px) {
+    .products ul.apparel{
+        border-radius: 0;
+        width: 100%;
+        margin-right: 0;
+    }
+     
+    .products a.pricebutton{
+        display: block;
+    }
+}
+
+img {
+    width: 98%;
+    display: flex;
+    margin: 20px auto;
+}
