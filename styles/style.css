@@ -89,7 +89,8 @@ iframe {
     border-radius : 10px;
 }
 
-@media only screen and (max-width:500px) {
+@media (max-width:500px) {
+    
     #header {
         flex-direction : column;
     }
@@ -97,11 +98,10 @@ iframe {
         align-self : baseline;
         margin : 0;
     }
-    .products div.apparel {
-        border-radius : 0;
-        width : 100%;
-        margin-right : 0;
+    .product {
+        flex-direction: column;
     }
+    
     .products a.pricebutton {
         display : block;
     }
