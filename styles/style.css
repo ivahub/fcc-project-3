@@ -105,12 +105,18 @@ iframe {
     .products a.pricebutton {
         display : block;
     }
+    
+    ::placeholder {
+    font-size : 17px;
+    font-family : Catamaran, sans-serif;
+}
 }
 
 div .product-image img {
     width : 98%;
     display : flex;
 }
+
 
 #about {
     font-size : 20px;
@@ -150,13 +156,36 @@ div .product-image img {
     background-color: #262B2E;
     color: white;
 }
+
 .contact {
     font-size : 20px;
     padding-left : 60px;
     padding-right : 40px;
+    margin-bottom: 40px;
+}
+
+#email {
+    height: 30px;
+    width: 200px;
+}
+
+#submit {
+    font-family: Catamaran, sans-serif;
+    font-size: 18px;
+    border: none;
+    background: none;
+    height: 35px;
+}
+
+
+#submit:hover {
+    cursor: pointer;
+    background-color: #262B2E;
+    color: white;
 }
 
 ::placeholder {
     font-size : 17px;
     font-family : Catamaran, sans-serif;
+    line-height: 2;
 }
