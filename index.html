@@ -10,49 +10,83 @@
     <body>
         <div class="header">
         <header id="header">
-            <img src="images/logo.png" id="header-img" alt="Summit Ice Company Logo" /> <br>
-            <nav id="nav-bar"><a href="#products" class="nav-link">Products</a> <a href="#about" class="nav-link">About Us</a> <a href="#contact" class="nav-link">Contact</a></nav>
+            <div class="logo">
+            <img src="images/logo.png" id="header-img" alt="Summit Ice Company Logo" /> </div>
+ <nav id="nav-bar">
+   <ul>
+     <li><a href="#products" title=”Watches” class="nav-link">Products</a></li>
+     <li><a href="#about" title=”About” class="nav-link">About</a></li>
+     <li><a href="#mail" title=”Contact” class="nav-link">Contact</a></li>
+   </ul>
+ </nav>
+            
         </header>
             </div>
         
         <div id="main">
             <h1>"6 million Jews died."</h1><br>
-            <div class="iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/myXbLhPli0g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><br>
+            <div class="videoWrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/myXbLhPli0g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><br>
+            
+<div class="product-title">Our Products:</div>
             <div id="products" class="flex-container">
-                <div class="products">
-    <ul class="apparel" id="shirts">
-        <li><img src="images/tshirt.png" alt="Summit Ice T-Shirt"></li>
-        <li><b>Description:</b> This high-quality tee provides maximum comfort while making a statement about the Holocaust.
-        </li>
-        <li><b>Material: </b>100% cotton</li>
-        <li><b>Price: $24.99 </b><a class="pricebutton" href="#"><span class="icon-tag"></span> Check Out</a></li>
-    </ul>
-    <ul class="apparel">
-        <li><img src="images/jacket.png" alt="Summit Ice Jacket" class="jacket"></li>
-        <li><b>Description:</b> Soft but durable. Warm but breathable. Wherever your next adventure takes you, this water and wind-resistant all-season jacket has you covered.</li>
-        <li><b>Material:</b> Polyester/spandex woven shell bonded to 100% polyester microfleece with laminated film insert.</li>
-
-        <li><b>Price: $109.99 </b><a class="pricebutton" href="#"><span class="icon-tag"></span> Check Out</a></li>
-    </ul>
-    <ul class="apparel">
-        <li><img src="images/tuque.png" alt="Summit Ice Tuque"></li>
-        <li><b>Description: </b> Look stylish on the street and stay warm on the slopes with this classic winter tuque. Wear it alone, or under the hood of a Summit Ice softshell.</li>
-        <li class="ethighlight"><b>Material:</b> 100% polyester</li>
+    <section class="apparel">
+		<div class="product">
+			<div class="product-image">
+				<img src="images/tshirt.png">
+			</div>
+			<div class="info-price">
+				<h5>T-Shirt</h5>
+				<h6>$24.99</h6>
+			</div>
+		</div>
+		
+		<div class="product">
+			<div class="product-image">
+				<img src="images/jacket.png">
+			</div>
+			<div class="info-price">
+				<h5>Winter Jacket</h5>
+				<h6>$99.99</h6>
+			</div>
+		</div>
+		
+		<div class="product">
+			<div class="product-image">
+				<img src="images/tuque.png">
+			</div>
+			<div class="info-price">
+				<h5>Tuque</h5>
+				<h6>$19.99</h6>
+			</div>
+		</div>
         
-        <li><b>Price: $19.99 </b><a class="pricebutton" href=""><span class="icon-tag"></span> Check Out</a></li>
-    </ul>
-</div>
+        <div class="product">
+			<div class="product-image">
+				<img src="images/socks.png">
+			</div>
+			<div class="info-price">
+				<h5>Socks</h5>
+				<h6>$14.99</h6>
+			</div>
+		</div>
+</section>
             </div>
             <br>
-            <div id="about">About us<br>
-            <p>Summit Ice® is a not-for-profit company founded by Nathan Fielder, dedicated to producing quality outdoor apparel and raising awareness of the Holocaust. 100% of profits go to the Vancouver Holocaust Education Centre in Vancouver, Canada.
+            <div id="about">
+            <p class="about-title">About us</p>
+            <img src="images/aboutus.jpg" alt="Summit Ice Team">
+            <p>Summit Ice is a not-for-profit company founded by Nathan Fielder, dedicated to producing quality outdoor apparel and raising awareness of the Holocaust. 100% of profits go to the Vancouver Holocaust Education Centre in Vancouver, Canada.
 
 http://www.vhec.org/</p></div>
+            <div class="contact" id="mail">
+            <p class="contact-title">Contact Us</p>
             <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
                 <label for="email" id="contact">Your e-mail: </label>
-                <input id="email" name="email" type="email" required placeholder="nathan@summitice.com"><br>
+                <input id="email" name="email" type="email" required placeholder="nathan@summitice.com">
                 <input id="submit" type="submit" value="Submit">
                 </form>
+                </div>
         </div>
     </body>
 </html>
